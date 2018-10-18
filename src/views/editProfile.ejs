@@ -1,0 +1,28 @@
+<%- include('header') %>
+
+    <h1>Edit Profile</h1>
+
+    <% if (locals.message) { %>
+        <span class="message"><%= message %></span>
+    <% } %>
+    <span class="error"></span>
+
+    <form id="editForm" action="/services/editProfile" method="post">
+        Name:<br>
+        <input type="text" name="name" id="name" value="<%= user.name %>">
+        <br>
+        Email:<br>
+        <input type="text" name="email" id="email" value="<%= user.email %>">
+        <br>
+        Phone:<br>
+        <input type="text" name="phone" id="phone" value="<%= user.phone %>">
+        <br>
+        Address:<br>
+        <input type="text" name="address" id="address" value="<%= user.address %>">
+        <br>
+        <button type="submit">Confirm</button>
+    </form>
+
+    <br><a href="/profile">Back</a>
+
+<%- include('footer'); %>

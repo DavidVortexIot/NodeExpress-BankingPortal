@@ -1,0 +1,24 @@
+<%- include('header'); %>
+
+    <h1>Add Money</h1>
+
+    <% if (locals.message) { %>
+        <span class="message"><%= message %></span>
+    <% } %>
+    <span class="error"></span>
+
+    <form id="addForm" action="/services/addMoney" method="post">
+        <span>Add Money To: </span>
+        <select id="to" name="to" required>
+            <option value="checking">Checking</option>
+            <option value="savings">Savings</option>
+        </select>
+
+        <input type="number" name="amount" id="amount" required placeholder="amount" step="0.01">
+        <button type="submit">Add Money</button>
+
+    </form>
+
+    <br><a href="/">Back to Accounts Summary</a>
+
+<%- include('footer'); %>

@@ -1,9 +1,9 @@
 [
-  {
-    "name": "PS User",
-    "username": "psuser",
-    "phone": "801-555-0101",
-    "email": "psuser@example.com",
-    "address": "1212 PS Circle, Project, Learning, 55555"
-  }
+    {
+        "name": "David M Jones",
+        "username": "psuser",
+        "phone": "12345678910",
+        "email": "david@vortexiot.com",
+        "address": "59 Bryn Eglur Road, Swansea"
+    }
 ]

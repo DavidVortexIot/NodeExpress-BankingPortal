@@ -12,4 +12,9 @@ const writeJSON = () => {
     fs.writeFileSync(path.join(__dirname, 'json', 'accounts.json'), accountsJSON, 'utf8');
 };
 
-module.exports = {accounts, users, writeJSON};
+const writeUserJSON = () => {
+    const userJSON = JSON.stringify(users, null, 4);
+    fs.writeFileSync(path.join(__dirname, 'json', 'users.json'), userJSON, 'utf8');
+}
+
+module.exports = {accounts, users, writeJSON, writeUserJSON};
